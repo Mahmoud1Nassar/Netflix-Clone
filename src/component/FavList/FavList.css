@@ -1,0 +1,49 @@
+.fav-list {
+    padding: 20px;
+  }
+  
+  .fav-list h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .fav-movie-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 10px;
+  }
+  
+  .fav-movie-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .fav-movie-card h2 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .fav-movie-card p {
+    margin: 10px 0;
+  }
+  
+  .fav-movie-card button {
+    background-color: #008cba;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+  .fav-movie-card button:hover {
+    background-color: #005f5f;
+  }
+  
