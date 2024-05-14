@@ -1,15 +1,15 @@
-// src/components/MovieList/MovieList.js
-import React from 'react';
-import Movie from '../Movie/Movie.js';
+import React from "react";
+import Movie from "../Movie/Movie.js";
+import "./MovieList.css";
 
 function MovieList({ movies }) {
-    return (
-        <div>
-            {movies.map(movie => (
-                <Movie key={movie.id} movie={movie} />
-            ))}
-        </div>
-    );
+  return (
+    <div className="movie-list">
+      {movies.map((movie) => (
+        <Movie key={movie.id} movie={movie} />
+      ))}
+    </div>
+  );
 }
 
 export default MovieList;

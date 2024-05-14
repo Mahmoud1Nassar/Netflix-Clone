@@ -1,13 +1,21 @@
-// src/App.js
 import React from 'react';
-import Home from './component/Home/Home.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
+import Home from './component/Home/Home';
+import FavList from './component/FavList/FavList';
+import Navbar from './component/Navbar/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/favorites" element={<FavList />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
